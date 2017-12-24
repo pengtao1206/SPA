@@ -1,0 +1,29 @@
+.main{width: 100%;height: 800px;background: url(../images/banner.jpg) no-repeat;}
+.header{height:100px;position:relative;}
+		.header .header-left{width:110px;height:120px;background:lightgrey;margin-left:-15px;padding-left: 10px;}
+		.header .header-middle{height:100px;width:55%;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;}
+		.header-middle ul{margin-left:0px;font-size:0;margin-bottom:0px;}
+		.header-middle ul li{height:100px;line-height:100px;font-size:16px;color:#fff;width:80px;margin-right:30px;position:relative;}
+		.header-middle ul li:last-child{margin-right:0px;}
+		.header-middle ul li .li-info{width:80px;top:0;left:0;position:absolute;z-index:23;display:inline-block;}
+		.header-middle ul li .header-bg{width:80px;height:0;background:green;position:absolute;top:0;left:0;transition:.5s;}
+		.header-middle ul li:hover .header-bg{height:100px;}
+		.header-middle .tubiao{display:none;width:30px;height:30px;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;}
+		.header .header-right{width:150px;height: 50px;margin-top: 30px;}
+		.header .header-right .t{width:40px;height:50px;background:yellow;background: url(../images/icon-tb.png) 6px 0px;}
+		.header .header-right .t:hover{background-position: 0px -45px;}
+		.header .header-right .g{width:40px;height:50px;background:yellow;background: url(../images/icon-tb.png) -40px 0px;}
+		.header .header-right .g:hover{background-position: -40px -45px;}
+		.header .header-right .v{width:40px;height:50px;background:yellow;background: url(../images/icon-tb.png) -80px 0px;}
+		.header .header-right .v:hover{background-position: -80px -45px;}
+		.main .content{height: 300px;width: 650px;margin: 0 auto;margin-top: 200px;}
+		.main .content h2{color: white;text-align: center;}
+		@media (max-width:1000px){
+		    .header .header-middle{width:100%;}
+		    .header .tubiao{display:block;}
+			.header .header-ul{width:100%;position:absolute;display:block;top:100px;}
+			.header .header-ul .header-bg{width:100%;}
+			.header .header-ul li{width:100%;}
+			.header .header-ul li div{padding-left: 48%;}
+			.content{display: none;}
+		}
